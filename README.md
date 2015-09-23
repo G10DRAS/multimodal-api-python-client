@@ -1,5 +1,5 @@
 # Systran Multimodal Python Client Library.
-This is a Python implementation of the [Systran Multimodal](https://api-platform-stag.systran.net/multimodal) Client Library.
+This is a Python implementation of the [Systran Multimodal](https://platform.systran.net/reference/multimodal) Client Library.
 
 ## Requirements.
 Python 2.7 and later.
