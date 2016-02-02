@@ -32,7 +32,7 @@ REQUIRES = ["urllib3 >= 1.10", "six >= 1.9", "certifi"]
 
 setup(
     name="multimodal-api-python-client",
-    version="0.0.1",
+    version="1.0.1",
     description="REST Multimodal API",
     author_email="",
     url="",
