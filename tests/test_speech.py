@@ -4,15 +4,15 @@
 import os
 import unittest
 
-import systranMultimodalApi
-import systranMultimodalApi.configuration
+import systran_multimodal_api
+import systran_multimodal_api.configuration
 
 class SpeechApiTests(unittest.TestCase):
     def setUp(self):
         api_key_file = os.path.join(os.path.dirname(__file__), "../", "api_key.txt")
-        systranMultimodalApi.configuration.load_api_key(api_key_file)
-        self.api_client = systranMultimodalApi.ApiClient()
-        self.speech_api = systranMultimodalApi.SpeechApi(self.api_client)
+        systran_multimodal_api.configuration.load_api_key(api_key_file)
+        self.api_client = systran_multimodal_api.ApiClient()
+        self.speech_api = systran_multimodal_api.SpeechApi(self.api_client)
 
     def test_multimodal_speech_supported_languages_get(self):
         result = self.speech_api.multimodal_speech_supported_languages_get()

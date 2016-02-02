@@ -4,15 +4,15 @@
 import os
 import unittest
 
-import systranMultimodalApi
-import systranMultimodalApi.configuration
+import systran_multimodal_api
+import systran_multimodal_api.configuration
 
 class FileApiTests(unittest.TestCase):
     def setUp(self):
         api_key_file = os.path.join(os.path.dirname(__file__), "../", "api_key.txt")
-        systranMultimodalApi.configuration.load_api_key(api_key_file)
-        self.api_client = systranMultimodalApi.ApiClient()
-        self.file_api = systranMultimodalApi.FileApi(self.api_client)
+        systran_multimodal_api.configuration.load_api_key(api_key_file)
+        self.api_client = systran_multimodal_api.ApiClient()
+        self.file_api = systran_multimodal_api.FileApi(self.api_client)
 
     def test_multimodal_file_supported_formats_get(self):
         result = self.file_api.multimodal_file_supported_formats_get()
